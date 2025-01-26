@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="filters">
+      <label for="category-filter">Category:</label>
+      <select id="category-filter">
+        <option value="">All Categories</option>
+        <option value="Informacinės technologijos">
+          Informacinės technologijos
+        </option>
+        <option value="Fantastika">Fantastika</option>
+        <option value="Historical Fiction">Historical Fiction</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="Mystery & Thriller">Mystery & Thriller</option>
+      </select>
+      <label for="title-filter">Title:</label>
+      <input type="text" id="title-filter" placeholder="Enter title" />
+      <label for="pages-filter">Pages:</label>
+      <input type="number" id="pages-filter" placeholder="Max pages" />
+      <button id="apply-filters-button">Apply Filters</button>
+    </div>
+    <!---->
+    <div id="sorting">
+      <label for="sort-options">Sort by:</label>
+      <select id="sort-options">
+        <option value="">Select</option>
+        <option value="title-asc">Title Alphabet</option>
+        <option value="price-asc">Price Ascending</option>
+        <option value="price-desc">Price Descending</option>
+      </select>
+      <button id="sort-button">Sort</button>
+    </div>
+    <!---->
+    <div id="inventory"></div>
+    <!---->
+    <div class="btn">
+      <button id="calculate-button">The value of the inventory</button>
+      <button id="cheapest-book-button">The Cheapest Book</button>
+      <button id="most-expensive-book-button">The Expensive Book</button>
+    </div>
+
+    <div id="total-value"></div>
+    <div id="cheapest-book"></div>
+    <div id="most-expensive-book"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
