@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+#inventory {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.category h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.book {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.book p {
+  margin: 5px 0;
+}
+
+.book span {
+  display: block;
+}
+/**/
+.category-total {
+  background-color: #e9e9e9;
+  padding: 10px;
+  border-top: 2px solid #333;
+  margin-top: 10px;
+}
+.overall-total {
+  background-color: #ccc;
+  padding: 15px;
+  border-top: 2px solid #333;
+  margin-top: 20px;
+  text-align: center;
+}
+/***/
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#calculate-button,
+#cheapest-book-button,
+#most-expensive-book-button {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+#calculate-button:hover,
+#cheapest-book-button:hover,
+#most-expensive-book-button:hover {
+  background-color: #45a049;
+}
+#total-value,
+#cheapest-book,
+#most-expensive-book {
+  background-color: #e9e9e9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+/* filter*/
+#filters,
+#sorting {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+#filters label,
+#sorting label {
+  display: block;
+  margin: 10px 0 5px;
+}
+#filters input,
+#filters select,
+#sorting select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/***/
